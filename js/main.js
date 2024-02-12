@@ -9,9 +9,10 @@ const picture = () => {
   };
 };
 const image = picture();
-console.log(image);
-console.log(picture());
 
-const draw = () => {};
-
-console.log(draw());
+let KEY_CODE = {
+  LEFT: 37,
+  UP: 38,
+  RIGHT: 39,
+  DOWN: 40,
+};
