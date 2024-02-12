@@ -1,18 +1,19 @@
-const canvas = document.querySelector(".myCanvas");
-const context = canvas.getContext("2d");
+import { yellow } from "../js/yellowCar.js";
+// import { backgroundImg } from "../js/backgroundGreen.js";
+export const canvas = document.querySelector(".myCanvas");
+export const context = canvas.getContext("2d");
 
-const picture = () => {
+const redCar = () => {
   const img = new Image();
   img.src = "../img/red.png";
   img.onload = () => {
-    context.drawImage(img, 130, 100, 40, 40);
+    context.drawImage(img, 150, 100, 40, 35);
   };
+  return img;
 };
-const image = picture();
 
-let KEY_CODE = {
-  LEFT: 37,
-  UP: 38,
-  RIGHT: 39,
-  DOWN: 40,
-};
+const image = redCar();
+
+const car = yellow();
+
+// const background = backgroundImg();
