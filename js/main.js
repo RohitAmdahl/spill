@@ -1,8 +1,8 @@
 import { yellow } from "../js/yellowCar.js";
-// import { backgroundImg } from "../js/backgroundGreen.js";
+import { startGame } from "./index.js";
+import { restartGame } from "./index.js";
 export const canvas = document.querySelector(".myCanvas");
 export const context = canvas.getContext("2d");
-
 const redCar = () => {
   const img = new Image();
   img.src = "../img/red.png";
@@ -13,7 +13,6 @@ const redCar = () => {
 };
 
 const image = redCar();
-
 const car = yellow();
-
-// const background = backgroundImg();
+const game = startGame();
+const restart = restartGame();
