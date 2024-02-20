@@ -22,9 +22,11 @@ h1 {
   background-repeat: repeat-y;
   background-color: rgba(33, 87, 18, 0.819);
 }
-.start-btn {
+.start-btn,
+.Restart-btn {
   text-align: center;
   display: inline-block;
+  margin-top: 10px;
   margin: 5px;
   font-weight: bold;
   padding: 10px 0 10px 10px;
