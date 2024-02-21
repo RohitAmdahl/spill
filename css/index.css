@@ -4,6 +4,11 @@
   font-family: "Press Start 2P", system-ui;
   background-color: rgb(131, 11, 5);
 }
+
+body {
+  height: 100vh;
+}
+
 h1 {
   font-size: xx-large;
   text-align: center;
@@ -14,28 +19,30 @@ h1 {
 .myCanvas {
   display: block;
   margin: 0 auto;
-  width: 420px;
-  height: 420px;
+  width: 320px;
+  height: 320px;
+
   border: 2px solid rgb(40, 238, 10);
   background-image: url("../img/road.png");
   background-size: cover;
   background-repeat: repeat-y;
   background-color: rgba(33, 87, 18, 0.819);
 }
+
 .start-btn,
 .Restart-btn {
   text-align: center;
   display: inline-block;
-  margin-top: 10px;
   margin: 5px;
   font-weight: bold;
-  padding: 10px 0 10px 10px;
+  padding: 10px 12px;
   background-color: lightgray;
   text-shadow: -1px -1px black, 1px 1px white;
   color: gray;
   border-radius: 7px;
   box-shadow: 0 0.2em gray;
   cursor: pointer;
+  text-align: center;
 }
 .controls {
   text-align: center;
