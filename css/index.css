@@ -22,9 +22,6 @@ h1 {
   width: 520px;
   height: 520px;
   border: 2px solid rgb(40, 238, 10);
-  background-image: url("../img/road.png");
-  background-size: cover;
-  background-repeat: repeat-y;
   background-color: rgba(33, 87, 18, 0.819);
 }
 
@@ -45,4 +42,18 @@ h1 {
 }
 .controls {
   text-align: center;
+}
+
+.container {
+  background-position: center;
+  animation: road-move 5s linear infinite;
+}
+
+@keyframes road-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
 }
