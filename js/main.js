@@ -1,17 +1,15 @@
 import { yellow } from "../js/yellowCar.js";
-import { startGame } from "./index.js";
+
 import { restartGame } from "./index.js";
 export const canvas = document.querySelector(".myCanvas");
 export const context = canvas.getContext("2d");
 
 const car = yellow();
-console.log(car);
-const game = startGame();
 const restart = restartGame();
 
 let spriteObject = {
   x: 150,
-  y: 100,
+  y: 110,
   width: 40,
   height: 35,
 };
@@ -61,6 +59,9 @@ function update() {
   if (spriteObject.x < 0) {
     spriteObject.x = 0;
   }
+  if (spriteObject.x > canvas.width - spriteObject.width) {
+    spriteObject.x = canvas.width - spriteObject.width;
+  }
 
   spriteObject.x += speedX;
   spriteObject.y += speedY;
@@ -72,9 +73,6 @@ function update() {
     spriteObject.width,
     spriteObject.height
   );
-  car;
-  game;
-  restart;
   requestAnimationFrame(update);
 }
 
